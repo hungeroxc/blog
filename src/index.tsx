@@ -6,8 +6,6 @@ import styles from './index.scss'
 import Shared from '@shared/SharedTest'
 import View from '@views/ViewTest'
 
-var b = 1
-
 const render = () => {
     ReactDOM.render(
         <div className={styles.test}>
