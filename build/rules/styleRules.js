@@ -24,4 +24,20 @@ module.exports = [
             },
         ],
     },
+    // antd样式文件编译
+    {
+        test: /\.less$/,
+        use: [
+            'style-loader',
+            'css-loader',
+            {
+                loader: 'less-loader',
+                options: {
+                    lessOptions: {
+                        javascriptEnabled: true,
+                    },
+                },
+            },
+        ],
+    },
 ]
