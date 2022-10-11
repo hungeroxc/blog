@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --config build/webpack.config.js --mode development",
-    "lint": "eslint src --ext .ts,.tsx & npx stylelint '**/*.scss' ",
+    "lint": "eslint src --ext .ts,.tsx && stylelint \"./src/**/*.scss\"",
     "prepare": "husky install"
   },
   "repository": {
