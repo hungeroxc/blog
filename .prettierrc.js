@@ -1,7 +1,7 @@
 module.exports = {
-  semi: false,
-  singleQuote: true,
-  printWidth: 100,
-  tabWidth: 4,
-  stylelintIntegration: true,
+    semi: false,
+    singleQuote: true,
+    printWidth: 100,
+    tabWidth: 4,
+    stylelintIntegration: true,
 }
