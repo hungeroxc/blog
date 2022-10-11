@@ -6,7 +6,7 @@ import styles from './index.scss'
 import Shared from '@shared/SharedTest'
 import View from '@views/ViewTest'
 
-var a = 1
+var b = 1
 
 const render = () => {
     ReactDOM.render(
