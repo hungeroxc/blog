@@ -31,4 +31,8 @@ module.exports = {
         },
     },
     devtool: 'source-map',
+    cache: {
+        type: 'filesystem',
+        allowCollectingMemory: true,
+    },
 }

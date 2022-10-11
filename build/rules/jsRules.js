@@ -10,7 +10,6 @@ module.exports = [
                 options: {
                     babelrc: false,
                     presets: ['@babel/preset-typescript', '@babel/preset-react'],
-                    // plugins: ['@babel/plugin-syntax-dynamic-import'],
                     plugins: [
                         [
                             'import',
