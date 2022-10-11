@@ -1,0 +1,4 @@
+// .module.scss不被视为scss文件，所以暂时只能通过修改vscode配置的方式处理，所以讲.vscode文件夹提交上去
+{
+    "stylelint.validate": ["css", "scss"]
+}
