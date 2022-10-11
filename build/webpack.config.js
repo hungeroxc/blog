@@ -18,4 +18,17 @@ module.exports = {
         rules: [...jsRules, ...styleRules],
     },
     plugins: [...plugins],
+    resolve: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        alias: {
+            '@views': resolve('src/containers/views'),
+            '@shared': resolve('src/containers/shared'),
+            '@services': resolve('src/services'),
+            '@constants': resolve('src/constants'),
+            '@store': resolve('src/store'),
+            '@utils': resolve('src/utils'),
+            '@assets': resolve('src/assets'),
+        },
+    },
+    devtool: 'source-map',
 }
