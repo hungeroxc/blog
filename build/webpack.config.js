@@ -35,4 +35,7 @@ module.exports = {
         type: 'filesystem',
         allowCollectingMemory: true,
     },
+    devServer: {
+        historyApiFallback: true,
+    },
 }

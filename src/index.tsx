@@ -1,21 +1,19 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Button } from 'antd'
+import { Provider } from 'mobx-react'
 
-import styles from './index.scss'
-import Shared from '@shared/SharedTest'
-import View from '@views/ViewTest'
+import App from '@views/App'
+import { stores, StoresContext } from '@store/index'
 
 const render = () => {
-  ReactDOM.render(
-    <div className={styles.test}>
-      123
-      <Button type="primary">asd</Button>
-      <Shared />
-      <View />
-    </div>,
-    document.querySelector('#app')
-  )
+    ReactDOM.render(
+        <Provider {...stores}>
+            <StoresContext.Provider value={stores}>
+                <App />
+            </StoresContext.Provider>
+        </Provider>,
+        document.querySelector('#app')
+    )
 }
 
 render()
