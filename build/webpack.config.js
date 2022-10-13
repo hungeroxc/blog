@@ -2,6 +2,9 @@ const { resolve } = require('./utils')
 const jsRules = require('./rules/jsRules')
 const plugins = require('./plugins')
 const styleRules = require('./rules/styleRules')
+const optimization = require('./optimization')
+
+const isDev = process.env.NODE_ENV === 'development'
 
 /**
  * @type {import('webpack').Configuration}
@@ -12,7 +15,9 @@ module.exports = {
     },
     output: {
         path: resolve('dist'),
-        filename: '[name].js',
+        filename: isDev ? '[name].js' : '[name].[chunkhash].js',
+        chunkFilename: isDev ? '[name].js' : '[name].[chunkhash].js',
+        publicPath: '/',
     },
     module: {
         rules: [...jsRules, ...styleRules],
@@ -30,7 +35,7 @@ module.exports = {
             '@assets': resolve('src/assets'),
         },
     },
-    devtool: 'source-map',
+    devtool: isDev ? undefined : 'source-map',
     cache: {
         type: 'filesystem',
         allowCollectingMemory: true,
@@ -38,4 +43,6 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
     },
+    optimization: isDev ? {} : optimization,
+    mode: process.env.NODE_ENV,
 }
