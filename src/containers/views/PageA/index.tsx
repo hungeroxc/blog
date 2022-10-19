@@ -16,6 +16,7 @@ const PageA = () => {
             <Button onClick={() => navigate('/page-b')}>点击</Button>
             <Button onClick={() => numStore.increase()}>+</Button>
             <div>{process.env.NODE_ENV}</div>
+            <div>测试自动化构建</div>
         </div>
     )
 }
