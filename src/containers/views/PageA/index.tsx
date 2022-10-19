@@ -13,6 +13,7 @@ const PageA = () => {
             {numStore.num}
             <Button onClick={() => navigate('/page-b')}>点击</Button>
             <Button onClick={() => numStore.increase()}>+</Button>
+            <div>测试build是否成功</div>
         </div>
     )
 }
