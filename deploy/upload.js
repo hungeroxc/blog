@@ -6,7 +6,7 @@ const secretKey = process.env.QINIUSK
 
 const mac = new qiniu.auth.digest.Mac(accessKey, secretKey)
 
-const staticPath = 'dista'
+const staticPath = 'dist'
 const bucket = 'oxcblog'
 
 const config = new qiniu.conf.Config()
