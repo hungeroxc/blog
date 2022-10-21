@@ -36,7 +36,7 @@ module.exports = {
             '@styles': resolve('src/styles'),
         },
     },
-    devtool: isDev ? undefined : 'source-map',
+    devtool: isDev ? 'source-map' : undefined,
     cache: {
         type: 'filesystem',
         allowCollectingMemory: true,

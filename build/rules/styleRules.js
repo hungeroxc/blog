@@ -42,4 +42,9 @@ module.exports = [
             },
         ],
     },
+    // css样式文件
+    {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+    },
 ]
