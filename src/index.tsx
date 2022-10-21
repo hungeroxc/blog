@@ -8,7 +8,7 @@ import { stores, StoresContext } from '@store/index'
 const root = ReactDOM.createRoot(document.querySelector('#app') as Element)
 
 root.render(
-    <Provider {...stores}>
+    <Provider children={undefined} {...stores}>
         <StoresContext.Provider value={stores}>
             <App />
         </StoresContext.Provider>
