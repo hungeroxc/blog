@@ -10,16 +10,16 @@ module.exports = [
                 options: {
                     babelrc: false,
                     presets: ['@babel/preset-typescript', '@babel/preset-react'],
-                    plugins: [
-                        [
-                            'import',
-                            {
-                                libraryName: 'antd',
-                                libraryDirectory: 'lib',
-                                style: true,
-                            },
-                        ],
-                    ],
+                    // plugins: [
+                    //     [
+                    //         'import',
+                    //         {
+                    //             libraryName: 'antd',
+                    //             libraryDirectory: 'es',
+                    //             style: 'css',
+                    //         },
+                    //     ],
+                    // ],
                 },
             },
         ],

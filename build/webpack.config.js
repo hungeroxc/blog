@@ -33,6 +33,7 @@ module.exports = {
             '@store': resolve('src/store'),
             '@utils': resolve('src/utils'),
             '@assets': resolve('src/assets'),
+            '@styles': resolve('src/styles'),
         },
     },
     devtool: isDev ? undefined : 'source-map',

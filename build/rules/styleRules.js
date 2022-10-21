@@ -6,7 +6,6 @@ module.exports = [
     {
         test: /\.scss$/,
         use: [
-            // 'style-loader',
             MiniCssExtractPlugin.loader,
             'css-modules-typescript-loader',
             {
@@ -31,7 +30,6 @@ module.exports = [
     {
         test: /\.less$/,
         use: [
-            // 'style-loader',
             MiniCssExtractPlugin.loader,
             'css-loader',
             {
